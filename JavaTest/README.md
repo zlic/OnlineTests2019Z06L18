@@ -1,5 +1,5 @@
 # Acquisio test en ligne
-(See below for the [english version](#Acquisio online test))
+(See below for the [english version](Acquisio online test))
 
 Bonjour et bienvenue au test en ligne d'Acquisio. Nous vous remercions de prendre le
 temps de remplir ce test. Ceci nous permettra d'évaluer vos connaissances générales
