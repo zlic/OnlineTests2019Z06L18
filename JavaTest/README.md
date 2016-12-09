@@ -1,5 +1,5 @@
 # Acquisio test en ligne
-(See below for the [english version](Acquisio online test))
+(See below for the english version - Acquisio online test
 
 Bonjour et bienvenue au test en ligne d'Acquisio. Nous vous remercions de prendre le
 temps de remplir ce test. Ceci nous permettra d'évaluer vos connaissances générales
@@ -10,9 +10,9 @@ au niveau du développement Web. Il n'y a pas de limite de temps, et n'hésitez 
 Pour débuter le test, veuillez faire un "Fork" du projet.
 
 Le test en séparé en 3 sections principales. Soit:
- 1. Questions génériques sur [Java](#Générique Java)
- 1. Questions génériques sur [SQL](#Générique SQL)
- 1. Questions d'implémentation d'une fonctionalité dans une [Application Web](#Application Web)
+ 1. Questions génériques sur Java
+ 1. Questions génériques sur SQL
+ 1. Questions d'implémentation d'une fonctionalité dans une Application Web
 
 Afin de voir votre méthode de penser et votre cheminement, veuillez commit aussitôt que possible.
 Lorsque vous aurez terminer, veuillez soumettre un "Pull Request". Svp, ne pas faire
@@ -58,9 +58,9 @@ need clarification to [onlinetest@acquisio.com](mailto:onlinetest@acquisio.com)
 To start, please "fork" this project.
 
 This test is split into 3 main sections.
- 1. Generic questions about [Java](#About Java)
- 1. Generic questions about [SQL](#About SQL)
- 1. Implementation of a new [Web Application](#Web Application) functionality.
+ 1. Generic questions about Java
+ 1. Generic questions about SQL
+ 1. Implementation of a new Web Application
 
 In order to see your methodology and your way of thinking, please commit as soon and 
 often as possible. When the test is complete, submit a Pull Request. Do not squash
