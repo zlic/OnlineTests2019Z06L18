@@ -47,7 +47,25 @@ Les points d'entrées sont:
  * [Extraction.java](src/main/java/com/acquisio/basic/sql/question02/Extraction.java)
 
 ### Application Web
-À venir
+
+##### Contexte
+Sous la package "com.acquisio.app", vous trouverez une application Spring-Boot [FullStackApp.java](src/main/java/com/acquisio/app/FullStackApp.java). 
+Cette application permet de consulter une liste de départments et une liste d'employés. La partie UI
+est en Angular. La page principale est [index.html](src/main/resources/static/index.html) et
+les controlleurs sont gérés dans [FullStackApp.js](src/main/resources/static/js/FullStackApp.js).
+
+Pour démarrer l'application, vous devez exécuter la commande suivante: 
+```
+mvn clean spring-boot:run
+```
+
+Une fois le serveur démarré, vous pouvez accéder à l'application [http://localhost:8080](http://localhost:8080/)
+
+##### Projet
+Ajouter la fonctionnalité d'éditer un employé pour changer son salaire (entre 10000$ et 500000$, valeur entière seulement)
+et de changer son département. Offrir la possibilité d'ajouter un nouveau département à la liste actuelle. 
+
+Ajouter toute documentation et tous les tests que vous jugez pertinent.
 
 # Acquisio online test
 Welcome to the Acquisio online test. Thank you for taking the time to do this test.
@@ -80,7 +98,7 @@ The entry points are:
  * [Generics.java](src/main/java/com/acquisio/basic/java/question05/Generics.java)
  * [Refactoring.java](src/main/java/com/acquisio/basic/java/question06/Refactoring.java)
  * [Debugging.java](src/main/java/com/acquisio/basic/java/question07/Debugging.java)
- * [JUnit.java](src/main/java/com/acquisio/basic/java/question08/JUnit.java)
+ * [Calculator.java](src/main/java/com/acquisio/basic/java/question08/JUnit.java)
  * [Streams.java](src/main/java/com/acquisio/basic/java/question09/Streams.java)
 
 ### About SQL
@@ -95,4 +113,22 @@ The entry points are:
  * [Extraction.java](src/main/java/com/acquisio/basic/sql/question02/Extraction.java)
 
 ### Web Application
-In progress
+
+##### Contexte
+Under the "com.acquisio.app" package, you will find a Spring-Boot application named [FullStackApp.java](src/main/java/com/acquisio/app/FullStackApp.java).
+That application allow to consult a list of departments and a list of employees. The UI part is in Angular.
+The main page is [index.html](src/main/resources/static/index.html) and
+controllers are managed into [FullStackApp.js](src/main/resources/static/js/FullStackApp.js).
+
+To start the application, run this command : 
+```
+mvn clean spring-boot:run
+```
+
+Once the application is started, you can access the application at [http://localhost:8080](http://localhost:8080/)
+
+##### Projet
+Add the functionality to edit an employee to be able to change his/her salary (between 10000$ and 500000$,
+integer only) and to change his/her department. Also add the possibility to add a new department to the current list. 
+
+Add all the documentation and tests that you see fit.

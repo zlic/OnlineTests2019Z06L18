@@ -1,6 +1,6 @@
 package com.acquisio.basic.java.question8;
 
-public class JUnitTest {
+public class CalculatorTest {
 
     // TODO: Insert your code here.
 }
