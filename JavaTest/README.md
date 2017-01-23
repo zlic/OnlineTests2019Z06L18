@@ -7,7 +7,7 @@ au niveau du développement Web. Il n'y a pas de limite de temps, et n'hésitez 
 à envoyer vos questions si vous avez besoin de clarification à [onlinetest@acquisio.com](mailto:onlinetest@acquisio.com)
 
 
-Pour débuter le test, veuillez faire un clone du projet et faite une branche de travail.
+Pour débuter le test, veuillez faire un clone du projet et faites une branche de travail.
 
 Le test en séparé en 3 sections principales. Soit:
  1. Questions génériques sur Java
