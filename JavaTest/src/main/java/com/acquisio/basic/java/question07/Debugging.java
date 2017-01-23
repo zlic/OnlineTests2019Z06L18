@@ -16,7 +16,7 @@ public class Debugging {
 
     public static void main(String[] args) {
         Debugging instance = new Debugging();
-        instance.removeEvenNumbers(1, 2, 3, 4);
+        System.out.println(instance.removeEvenNumbers(1, 2, 3, 4));
     }
 
     private List<Integer> removeEvenNumbers(Integer ... values) {

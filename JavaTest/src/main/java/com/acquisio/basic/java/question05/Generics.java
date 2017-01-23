@@ -2,13 +2,13 @@ package com.acquisio.basic.java.question05;
 
 /**
  * QUESTION 5: Generics
- * Here is a design of a class that acts as stock of vehicules:
- * Vegetable, Fruit, and Motorcycle.
+ * Here is a design of a class that acts as an inventory of items:
+ * Vegetable and Fruit.
  * <p>
- * Provide a version of this class that uses generics.
+ * Provide a version of the Inventory class that uses generics.
  * Feel free to add any additional fields.
  * Make sure that the method stockInventory() is working properly
- * by uncommenting lines.
+ * by removing all class casts.
  *
  * IMPORTANT: Add all missing javadoc that you think is necessary.
  */
@@ -19,7 +19,7 @@ public class Generics {
     }
 
     private void stockInventory() {
-        // TODO: The following code should work with generics.
+        // TODO: The following code should work with generics. No casting should be necessary.
         Inventory fruitInventory = getFruitInventory();
         Fruit apple = (Fruit) fruitInventory.findFirst("Apple");
         System.out.println(String.format("Apple [%s] : %d units", apple.getColor(), apple.getQuantity()));
