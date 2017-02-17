@@ -10,7 +10,7 @@ package com.acquisio.basic.java.question01;
  * - Must not print anything if the value cannot be divided by itself.
  * - Must print ‘Fizz’ if the value can be divided by 3.
  * - Must print ‘Buzz’ if the value can be divided by 5.
- * - Otherwise, print the current integer value.
+ * - Otherwise, print the current integer value in the loop.
  *
  * IMPORTANT: Add all missing javadoc that you think is necessary.
  */
