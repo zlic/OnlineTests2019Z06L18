@@ -7,7 +7,7 @@ au niveau du développement Web. Il n'y a pas de limite de temps, et n'hésitez 
 à envoyer vos questions si vous avez besoin de clarification à [onlinetest@acquisio.com](mailto:onlinetest@acquisio.com)
 
 
-Pour débuter le test, veuillez faire un clone du projet et faites une branche de travail.
+Pour débuter le test, veuillez faire un "fork" du projet pour travailler sous votre compte GitHub.
 
 Le test en séparé en 3 sections principales. Soit:
  1. Questions génériques sur Java
@@ -73,7 +73,7 @@ It will allow us to evaluate your basic knowledge as a Web developer. There is n
 time limit to complete the test and feel free to send us all your questions if you
 need clarification to [onlinetest@acquisio.com](mailto:onlinetest@acquisio.com)
 
-To start, please "clone" this project and create a working branch for your changes.
+To start, please "fork" this project to work on it under your own github account.
 
 This test is split into 3 main sections.
  1. Generic questions about Java
