@@ -7,7 +7,7 @@ au niveau du développement Web. Il n'y a pas de limite de temps, et n'hésitez 
 à envoyer vos questions si vous avez besoin de clarification à [onlinetest@acquisio.com](mailto:onlinetest@acquisio.com)
 
 
-Pour débuter le test, veuillez faire un clone du projet et faites une branche de travail.
+Pour débuter le test, veuillez faire une branche de travail du projet pour travailler.
 
 Le test en séparé en 3 sections principales. Soit:
  1. Questions génériques sur Java
@@ -15,7 +15,7 @@ Le test en séparé en 3 sections principales. Soit:
  1. Questions d'implémentation d'une fonctionalité dans une Application Web
 
 Afin de voir votre méthode de penser et votre cheminement, veuillez commit aussitôt que possible.
-Lorsque vous aurez terminer, veuillez soumettre un "Pull Request". Svp, ne pas faire
+Lorsque vous aurez terminer, veuillez soumettre un seul "Pull Request". Svp, ne pas faire
 de "Squash" sur vos commits.
 
 ### Générique Java
@@ -73,7 +73,7 @@ It will allow us to evaluate your basic knowledge as a Web developer. There is n
 time limit to complete the test and feel free to send us all your questions if you
 need clarification to [onlinetest@acquisio.com](mailto:onlinetest@acquisio.com)
 
-To start, please "clone" this project and create a working branch for your changes.
+To start, please create a branch of this project to work on it.
 
 This test is split into 3 main sections.
  1. Generic questions about Java
@@ -81,7 +81,7 @@ This test is split into 3 main sections.
  1. Implementation of a new Web Application
 
 In order to see your methodology and your way of thinking, please commit as soon and 
-often as possible. When the test is complete, submit a Pull Request. Do not squash
+often as possible. When the test is complete, submit one Pull Request. Do not squash
 your commits at the end.
 
 ### About Java
