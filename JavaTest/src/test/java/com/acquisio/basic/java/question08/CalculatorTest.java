@@ -1,4 +1,4 @@
-package com.acquisio.basic.java.question8;
+package com.acquisio.basic.java.question08;
 
 public class CalculatorTest {
 
