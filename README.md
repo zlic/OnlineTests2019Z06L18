@@ -47,7 +47,7 @@ Les points d'entrées sont:
 ### Application Web
 
 #### Contexte
-Cette application affiche une liste des employés. L'application consiste en 2 partie. Le back-end, fait en Java avec Spring-Boot
+Cette application affiche une liste des employés. L'application consiste en 2 partie. Le back-end, fait en Java 8 avec Spring-Boot
 et le UI fait avec Angular 5.
 
 #### Projet
@@ -70,13 +70,13 @@ Tout le code de l'application se trouve sous le package "com.acquisio.com" et le
  * [Employee.java](src/main/java/com/acquisio/app/domain/Employee.java) Classe représentant un employé, dommaine
 
 Pour démarrer l'application Spring-Boot, vous devez:
- 1. Avoir java 8 d'installer.
- 2. Avoir maven d'installer.
+ 1. Avoir java 8 d'installé.
+ 2. Avoir maven d'installé. (version 3.x)
  3. Exécuter la commande suivante à partir de la racine du projet: 
 ```
 mvn clean spring-boot:run
 ```
-Une fois démarrer, vous devriez pouvoir appeler le endpoint suivant: http://localhost:8080/employees
+Une fois démarré, vous devriez pouvoir appeler le endpoint suivant: http://localhost:8080/employees
 
 
 #### Au niveau Angular
@@ -90,7 +90,7 @@ Le code se retrouve sous la structure 'client/src/app' et les composants princip
 
 Pour démarrer l'application Angular, vous devez:
  1. Démarrer la partie back-end.
- 2. Avoir npm d'installer.
+ 2. Avoir npm d'installé.
  3. Installer Angular avec la commande suivante:
 ```
 npm install -g @angular/cli@1.7.4
@@ -174,7 +174,7 @@ All the application code is available under the "com.acquisio.com" package and i
 
 To start the application, you need:
  1. Java 8 installed.
- 2. Maven installed.
+ 2. Maven installed. (version 3.x)
  3. Run the following command from the root of the project: 
 ```
 mvn clean spring-boot:run
