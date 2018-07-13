@@ -1,0 +1,13 @@
+package com.acquisio.basic.java.question06;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class DebuggingTest {
+    @Test
+    public void removeEvenNumbers() throws Exception {
+        assertArrayEquals(new Integer[]{2, 4}, new Debugging().removeEvenNumbers(1, 2, 3, 4));
+    }
+
+}
