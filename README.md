@@ -155,7 +155,7 @@ This application displays a list of employees. It is split into 2 parts. The bac
 and the UI with Angular 5.
 
 #### Project
-For the project, you need to use the external service named [Gravatar](https://fr.gravatar.com/site/implement/).
+For the project, you need to use the external service named [Gravatar](https://en.gravatar.com/site/implement/).
 Gravatar is an online tool allowing to associate a profil image to an email address. Following the instruction from the
 Gravatar website, modify the Spring-Boot application /employees endpoint in order to return all the information needed to display the gravatar
 associated to each employee's email address. 
