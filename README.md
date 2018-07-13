@@ -78,6 +78,7 @@ mvn clean spring-boot:run
 ```
 Une fois démarrer, vous devriez pouvoir appeler le endpoint suivant: http://localhost:8080/employees
 
+
 #### Au niveau Angular
 Le code se retrouve sous la structure 'client/src/app' et les composants principaux sont:
  * [app.component.html](client/src/app/app.component.html) ==> Application principale
@@ -147,21 +148,59 @@ The entry points are:
 
 ### Web Application
 
-##### Contexte
-Under the "com.acquisio.app" package, you will find a Spring-Boot application named [FullStackApp.java](src/main/java/com/acquisio/app/FullStackApp.java).
-That application allow to consult a list of departments and a list of employees. The UI part is in Angular.
-The main page is [index.html](src/main/resources/static/index.html) and
-controllers are managed into [FullStackApp.js](src/main/resources/static/js/FullStackApp.js).
+### Application Web
 
-To start the application, run this command : 
+#### Context
+This application displays a list of employees. It is split into 2 parts. The back-end, which is a Java app with Spring-Boot
+and the UI with Angular 5.
+
+#### Project
+For the project, you need to use the external service named [Gravatar](https://fr.gravatar.com/site/implement/).
+Gravatar is an online tool allowing to associate a profil image to an email address. Following the instruction from the
+Gravatar website, modify the Spring-Boot application /employees endpoint in order to return all the information needed to display the gravatar
+associated to each employee's email address. 
+
+The second part is optional. Modify the Angular application to display the profil image for each employee.
+
+Add all the documentation and tests that you see fit.
+
+All instructions to start the Spring-Boot app and the Angular app are available below.
+
+#### Java
+All the application code is available under the "com.acquisio.com" package and important classes are:
+ * [FullStackApp.java](src/main/java/com/acquisio/app/FullStackApp.java) ==> Main application
+ * [EmployeeController.java](src/main/java/com/acquisio/app/controller/EmployeeController.java) ==> REST Endpoint
+ * [Employee.java](src/main/java/com/acquisio/app/domain/Employee.java) Domain class, representing an employee.
+
+To start the application, you need:
+ 1. Java 8 installed.
+ 2. Maven installed.
+ 3. Run the following command from the root of the project: 
 ```
 mvn clean spring-boot:run
 ```
+Once started, you should be able to access the following endpoint: http://localhost:8080/employees
 
-Once the application is started, you can access the application at [http://localhost:8080](http://localhost:8080/)
+#### Angular
+Le code se retrouve sous la structure 'client/src/app' et les composants principaux sont:
+ * [app.component.html](client/src/app/app.component.html) ==> Application principale
+ * [app.component.ts](client/src/app/app.component.ts) ==> Application principale
+ * [employee-list.component.html](client/src/app/employee-list/employee-list.component.html) ==> Composant pour afficher la liste des employées
+ * [employee-list.component.ts](client/src/app/employee-list/employee-list.component.ts) ==> Composant pour afficher la liste des employées
+ * [employee.service.ts](client/src/app/shared/employee/employee.service.ts) ==> Service pour appeler le REST endpoint du back-end.
+ 
 
-##### Projet
-Add the functionality to edit an employee to be able to change his/her salary (between 10000$ and 500000$,
-integer only) and to change his/her department. Also add the possibility to add a new department to the current list. 
+To start the Angular application, you need:
+ 1. Start the back-end.
+ 2. npm installed.
+ 3. Install angular with the following command:
+```
+npm install -g @angular/cli@1.7.4
+```
+ 4. Run the following command from the client/ directory of the project:
+```
+ng serve
+```
+  
+Once started, you should be able to access the following endpoint: http://localhost:4200/
 
-Add all the documentation and tests that you see fit.
