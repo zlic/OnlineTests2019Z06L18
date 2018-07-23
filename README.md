@@ -95,8 +95,9 @@ Pour démarrer l'application Angular, vous devez:
 ```
 npm install -g @angular/cli@1.7.4
 ```
- 4. Exécuter la commande suivante à partir du répertoire client/ du projet:
+ 4. Exécuter les commandes suivantes à partir du répertoire client/ du projet:
 ```
+npm install
 ng serve
 ```
   
@@ -197,8 +198,9 @@ To start the Angular application, you need:
 ```
 npm install -g @angular/cli@1.7.4
 ```
- 4. Run the following command from the client/ directory of the project:
+ 4. Run the following commands from the client/ directory of the project:
 ```
+npm install
 ng serve
 ```
   
