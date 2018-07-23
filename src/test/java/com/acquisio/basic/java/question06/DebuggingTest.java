@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class DebuggingTest {
     @Test
     public void removeEvenNumbers() throws Exception {
-        assertArrayEquals(new Integer[]{2, 4}, new Debugging().removeEvenNumbers(1, 2, 3, 4));
+        assertArrayEquals(new Integer[]{1, 3}, new Debugging().removeEvenNumbers(1, 2, 3, 4));
     }
 
 }

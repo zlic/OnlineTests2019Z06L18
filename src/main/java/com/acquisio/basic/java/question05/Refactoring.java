@@ -2,9 +2,15 @@ package com.acquisio.basic.java.question05;
 
 /**
  * QUESTION 6: Refactoring
+ *
+ *
  * ======================================
  * Requirements Specification (en)
  * ======================================
+ * **********
+ * IMPORTANT: We will look at how you refactored this code to achieve the result.
+ *            The goal of this question is to see your skill to refactor code.
+ * **********
  * <p>
  * Hi and welcome to the team. As you know, we are a small inn with a prime location in a
  * prominent city ran by a friendly innkeeper named Allison. We also buy and sell only the finest goods.
@@ -50,6 +56,11 @@ package com.acquisio.basic.java.question05;
  * ======================================
  * Spécification des requis (fr)
  * ======================================
+ * **********
+ * IMPORTANT: Nous allons regarder comment vous avez refactorisé le code pour arriver à la solution finale.
+ *            Le but de la question est de voir comment vous approcher les problèmes complexes.
+ * **********
+ *
  * Bonjour et bienvenue dans l'équipe.
  * <p>
  * Comme vous le savez, notre petite taverne située à proximité d'une cité importante est dirigée

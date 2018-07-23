@@ -7,7 +7,6 @@ package com.acquisio.basic.java.question01;
  * received. Ex.: If you receive 50, you must loop from 0 to 50.
  * <p>
  * The program must follow those rules:
- * - Must not print anything if the value cannot be divided by itself.
  * - Must print 'Foo' if the value can be divided by 3.
  * - Must print 'Bar' if the value can be divided by 5.
  * - Otherwise, print the current integer value in the loop.
@@ -17,10 +16,13 @@ package com.acquisio.basic.java.question01;
 public class FooBar {
     public static void main(String[] args) {
         FooBar main = new FooBar();
-        main.fizzBuzz(50);
+        for (int i = 1; i < 50; i ++) {
+            System.out.println(main.fooBar(i));
+        }
     }
 
-    private void fizzBuzz(int maxValue) {
+    String fooBar(int value) {
         // TODO: Insert your code here
+        return null;
     }
 }
