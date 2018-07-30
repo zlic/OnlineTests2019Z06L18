@@ -16,7 +16,7 @@ package com.acquisio.basic.java.question01;
 public class FooBar {
     public static void main(String[] args) {
         FooBar main = new FooBar();
-        for (int i = 1; i < 50; i ++) {
+        for (int i = 1; i <= 50; i ++) {
             System.out.println(main.fooBar(i));
         }
     }
