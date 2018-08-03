@@ -2,9 +2,7 @@ package com.acquisio.basic.java.question01;
 
 /**
  * QUESTION 01: FooBar
- * You have a program that receives a value, which we assume is a positive
- * integer. You need to loop on all integer value between 0 and the value
- * received. Ex.: If you receive 50, you must loop from 0 to 50.
+ * You have a program that loop from 1 to 50.
  * <p>
  * The program must follow those rules:
  * - Must print 'Foo' if the value can be divided by 3.
