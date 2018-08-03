@@ -8,7 +8,7 @@ import java.nio.file.Files;
 /**
  * QUESTION 09: Lambdas (https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
  * Using JDK8 Lambdas, add the code to transform the input file to apply those rules.
- * 1- Filter out lines where the amount is lower than 50$
+ * 1- Keep lines where the amount is greater than or equals to 50$
  * 2- Add a Taxes column right after the Amount column, which is 15% of the Amount.
  * 3- Add a Total column right after the Taxes column, which is the sum of Amount and Taxes.
  * 4- Remove the ShoppingCartTitle columns.
