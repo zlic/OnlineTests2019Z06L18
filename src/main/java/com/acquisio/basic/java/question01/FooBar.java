@@ -19,8 +19,25 @@ public class FooBar {
         }
     }
 
+    /**
+     * Verify value return different result
+     * <p>
+     * Return "Foo", if value can be divided by 3<br>
+     * Return "Bar", if value can be divided by 5<br>
+     * otherwise, return the value as string
+     * @author Zhen Li
+     * @param value an integer value
+     * @return a string value
+     */
     String fooBar(int value) {
-        // TODO: Insert your code here
-        return null;
+        String r = String.valueOf(value);
+        if( value % 15 == 0 ){
+            r = "FooBar";
+        }else if ( value % 3 == 0){
+            r = "Foo";
+        }else if ( value % 5 == 0){
+            r = "Bar";
+        }
+        return r;
     }
 }
