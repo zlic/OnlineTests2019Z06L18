@@ -1,9 +1,17 @@
 package com.acquisio.basic.java.question08;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * QUESTION 09: Lambdas (https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
@@ -33,7 +41,59 @@ public class Lambdas {
     }
 
     void convertCarts(File input, File output) throws IOException {
-        // TODO: Insert your code here.
+            Stream<String> lines = Files.lines(input.toPath());
+            List<String> collected = lines.map(line-> new LinkedList<String>(Arrays.asList(line.split(","))))
+                    .filter(list -> Float.valueOf(list.get(1)) >= 50.0)
+                    .map(list->changeColumns(list))
+                    .collect(Collectors.toList());
+            saveToFile(output.getAbsolutePath(), collected);
+    }
+
+    /**
+     * Change columns
+     * <p>
+     * - Add a Taxes column right after the Amount column, which is 15% of the Amount.
+     * - Add a Total column right after the Taxes column, which is the sum of Amount and Taxes.
+     * - Remove the ShoppingCartTitle columns.
+     * @param list A List of String
+     * @return joined String with comma
+     */
+    private String changeColumns(List<String> list){
+        Float amount = Float.valueOf(list.get(1));
+        Float taxes = amount * 0.15f;
+        list.add(2, String.valueOf(taxes));
+        list.add(3, String.valueOf(amount + taxes));
+        list.remove(4);
+        return String.join(",", list);
+    }
+
+    /**
+     * Save a List of String to file
+     * <p>
+     *     each element in the List is in a new line
+     * @param path file path
+     * @param list a List of String
+     */
+    private void saveToFile(String path, List<String> list) {
+        FileWriter csvWriter = null;
+        try {
+            csvWriter = new FileWriter(path);
+            for (String line : list) {
+                csvWriter.append(line);
+                csvWriter.append("\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (csvWriter != null) {
+                try {
+                    csvWriter.flush();
+                    csvWriter.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
 }
