@@ -104,7 +104,7 @@ public class RefactoringTest {
     }
 
     @Test
-    public void testName() {
+    public void testUpdateQuality() {
         Item[] items = new Item[]{new Item(name, sellIn, quality)};
         Refactoring app = new Refactoring(items);
         app.updateQuality();
