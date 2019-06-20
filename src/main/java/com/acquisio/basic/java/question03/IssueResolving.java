@@ -21,6 +21,9 @@ public class IssueResolving {
      * @return factorial of n
      */
     int factorial(int n) {
+        if (n < 0) {
+            throw new ArithmeticException("Negative number doesn't have factorial.");
+        }
         int result = 1;
         while (n!=0){
             result = result * n;
