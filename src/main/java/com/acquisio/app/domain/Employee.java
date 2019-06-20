@@ -1,5 +1,7 @@
 package com.acquisio.app.domain;
 
+import com.acquisio.app.util.MD5Util;
+
 import javax.persistence.*;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
@@ -18,7 +20,8 @@ public class Employee {
     @Column(name = "email")
     private String email;
     private int salary;
-
+    @Transient
+    private String gravatar;
     Employee() {
         // JPA only
     }
@@ -69,4 +72,6 @@ public class Employee {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getGravatar() {return "https://www.gravatar.com/avatar/" + MD5Util.md5Hex(this.email);}
 }
