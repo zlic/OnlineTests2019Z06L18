@@ -28,7 +28,7 @@ public class IssueResolving {
             throw new ArithmeticException("Negative number doesn't have factorial.");
         }
         int result = 1;
-        while (n!=0){
+        while (n != 0) {
             result = result * n;
             n--;
         }
