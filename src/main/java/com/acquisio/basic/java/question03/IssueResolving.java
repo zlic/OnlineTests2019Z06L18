@@ -13,10 +13,19 @@ public class IssueResolving {
         System.out.println(instance.factorial(7));
     }
 
+    /**
+     * Factorial
+     * <p>
+     * the factorial of a positive integer n, denoted by n!
+     * @param n a positive integer
+     * @return factorial of n
+     */
     int factorial(int n) {
-        // TODO: Fix code here.
-        int result = 0;
-        result = factorial(n - 1) * n;
+        int result = 1;
+        while (n!=0){
+            result = result * n;
+            n--;
+        }
         return result;
     }
 
