@@ -28,7 +28,7 @@ public class H2DBUtil {
 
     public static void startDatabase() {
         try {
-            Server.createTcpServer("-tcpPort", "9092", "-tcpAllowOthers").start();
+            Server.createTcpServer("-tcpPort", "9092", "-tcpAllowOthers", "-ifNotExists").start();
             Class.forName("org.h2.Driver");
 
             initSchema();
