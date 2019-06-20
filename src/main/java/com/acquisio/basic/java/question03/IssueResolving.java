@@ -16,7 +16,10 @@ public class IssueResolving {
     /**
      * Factorial
      * <p>
-     * the factorial of a positive integer n, denoted by n!
+     * the factorial of a positive integer n, denoted by n! <br>
+     * - n &gt; 0, n! = n * ( n - 1 ) * ( n - 2 ) * ... * 3 * 2 * 1 <br>
+     * - n = 0, n! = 1 <br>
+     * - n &lt; 0, throw ArithmeticException <br>
      * @param n a positive integer
      * @return factorial of n
      */
